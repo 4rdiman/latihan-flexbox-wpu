@@ -1,0 +1,139 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ddd;
+    line-height: 1.65;
+}
+
+/* Latihan 1 */
+.container-satu{
+    width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px;  
+    display: flex; 
+}
+
+.kolom-utama{
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-satu{
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-dua{
+    flex: 1;
+    order: 3;
+}
+
+/* latihan 2 */
+.container-dua{
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.layanan{
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.layanan.satu{background-color: rgb(106, 106, 252);}
+.layanan.dua{background-color: rgb(126, 255, 126);}
+.layanan.tiga{background-color: rgb(255, 96, 96);}
+
+/* Latihan 3 */
+.container-tiga{
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail{
+    width: 50%;
+}
+
+.thumbnail img{
+    width: 100%;
+}
+
+/* latihan 4 */
+.container-empat{
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.card{
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    flex: 1;
+}
+
+.card .header{
+    background-color: #757575;
+    height: 150px;
+}
+
+.card .content{
+    background-color: #fcfcfc;
+    text-align: center;
+    padding: 20px;
+}
+
+/* latihan 5 */
+.container-lima{
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 5px solid;
+    display: flex;
+}
+
+.kotak{
+    width: 100px;
+    height: 100px;
+    background-color: cornflowerblue;
+    color: white;
+    margin: auto;
+    display: flex;
+}
+
+.kotak span{
+    margin: auto;
+}
+
+/* responsive */
+
+@media(min-width:700px){
+    .container-dua{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layanan{
+        width: 30%;
+    }
+
+    .thumbnail{
+        width: 25%;
+    }
+
+    .container-empat{
+        display: flex;
+    }
+
+    .card.besar{
+        transform: scale(1.15);
+    }
+}
